@@ -7,7 +7,7 @@ export default function Bio() {
       <p className="summary">
         You can find my thoughts here.
         <br /><br />
-        <b/>And <i/>pictures<b/><i/> of scientists!
+        <b>And <i>pictures</i></b> of scientists!
       </p>
       </>
     );

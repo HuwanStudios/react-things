@@ -2,7 +2,7 @@ import Gallery from '../Gallery';
 import Bio from './Bio';
 import Congratulations from './Congratulations';
 import { Profile, ProfileTwo } from './Profile'
-import TodoList from './TodoList';
+import {TodoList, TodoListTwo} from './TodoList';
 
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
     <Congratulations />
     <TodoList />
     <Bio />
+    <TodoListTwo/>
     </>
   )
 }
