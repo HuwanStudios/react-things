@@ -1,4 +1,5 @@
-function Profile() {
+
+function ProfileThree() {
     return (
       <img
         src="https://i.imgur.com/lICfvbD.jpg"
@@ -14,4 +15,4 @@ function ProfileTwo() {
     );
   }
 
-export {Profile, ProfileTwo};
+// export {Profile, ProfileTwo, ProfileThree};
