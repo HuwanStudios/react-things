@@ -16,12 +16,13 @@ import { getImageUrl } from "./Utils";
 
 function Profile({person, size = 70, profession, awards, discovered}) {
     const imageUrl = getImageUrl(person); //Get the imaage URL for the person
+    console.log(imageUrl);
 
     return (
       <>
           <img
              className="avatar"
-             src={getImageUrl}
+             src={imageUrl}
              alt={person.name}
              width={size}
              height={size}
