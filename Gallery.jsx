@@ -1,3 +1,5 @@
+//Defines the Profile component which is only used within the same file and is not exported.
+// Exports the Gallery component as a default export.
 function Profile() {
     return (
       <img
