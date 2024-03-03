@@ -41,6 +41,7 @@ function Profile({person, size = 70, profession, awards, discovered}) {
     return(
     <>
         <div>
+            <h1>Notable Scientist</h1>
             <Profile
                 size={size} // Pass in size or 70
                 person={{ 

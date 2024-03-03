@@ -6,6 +6,7 @@
 // import { Profile, ProfileTwo, ProfileThree } from './Profile'
 // import {TodoList, TodoListTwo} from './TodoList';
 
+import Profile from "./Card";
 import GalleryTwo from "./GalleryTwo";
 
 
@@ -24,6 +25,8 @@ function App() {
    */}
     <getImageUrl />
     <GalleryTwo />
+    <Profile />
+  
     </>
   );
 }
