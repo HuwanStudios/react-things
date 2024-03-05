@@ -7,7 +7,10 @@
 // import {TodoList, TodoListTwo} from './TodoList';
 
 import Profile from "./Card";
+import DrinkList from "./Drinklist";
 import GalleryTwo from "./GalleryTwo";
+import Item from "./Item";
+import PackingList from "./PackingList";
 
 
 
@@ -26,6 +29,9 @@ function App() {
     <getImageUrl />
     <GalleryTwo />
     <Profile />
+    <PackingList />
+    <Item />
+    <DrinkList />
   
     </>
   );
