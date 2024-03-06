@@ -37,10 +37,12 @@ function Profile({person, size = 70, profession, awards, discovered}) {
 
   function GalleryTwo(){
     const size = 70; //Default size for avatars
+    // let size = {size < 90 ?'s' : 'b'};
 
     return(
     <>
         <div>
+            <h1>Notable Scientist</h1>
             <Profile
                 size={size} // Pass in size or 70
                 person={{ 

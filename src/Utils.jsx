@@ -18,4 +18,4 @@
     );
 }
 // Request
-export { getImageUrl }; // Export getImageUrl as named export
+export {getImageUrl}; // Export getImageUrl as named export
