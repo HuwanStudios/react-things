@@ -11,6 +11,7 @@ import DrinkList from "./Drinklist";
 import GalleryTwo from "./GalleryTwo";
 import Item from "./Item";
 import PackingList from "./PackingList";
+import Poem from "./Poem";
 import RecipeList from "./RecipeList";
 
 
@@ -34,6 +35,7 @@ function App() {
     <Item />
     <DrinkList />
     <RecipeList />
+    <Poem />
   
     </>
   );
