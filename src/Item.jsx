@@ -21,4 +21,4 @@ function Item({ name, isPacked, importance}) {
   }
 
   export default Item;
-  //Challenge #1
+  //Challenge #1 & 2
