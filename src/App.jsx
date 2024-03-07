@@ -7,6 +7,7 @@
 // import {TodoList, TodoListTwo} from './TodoList';
 
 import Profile from "./Card";
+import Clock from "./Clock";
 import DrinkList from "./Drinklist";
 import GalleryTwo from "./GalleryTwo";
 import Item from "./Item";
@@ -36,6 +37,7 @@ function App() {
     <DrinkList />
     <RecipeList />
     <Poem />
+    <Clock />
   
     </>
   );
