@@ -7,8 +7,8 @@ function Recipe({id, name, ingredients}){
     <div>
         <h1>Recipes</h1>
         <h2>{name}</h2>
-        <ul>{ingredients.map((ingredient)=>(
-            <li key={ingredient}>
+        <ul>{ingredients.map((ingredient, index)=>( // Use index as key
+            <li key={index}>
                 {ingredient}
             </li>
         ))}
@@ -24,7 +24,7 @@ function RecipeList() {
           <ul>
             {recipes.map(recipe => (
               <Recipe
-                // key={recipe.id} 
+                key={recipe.id} 
                 id={recipe.id}
                 name={recipe.name}
                 ingredients={recipe.ingredients}

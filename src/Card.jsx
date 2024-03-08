@@ -48,7 +48,7 @@ function Profile() {
     <div>
         <div className="card">
             <div className="card-content">
-                <card />
+                <Card />
                 <h1>Photo</h1>
                 <img
                 className="avatar"

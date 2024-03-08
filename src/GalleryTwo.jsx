@@ -1,18 +1,4 @@
-import { getImageUrl } from "./Utils";
-
-// function Avatar ({person, size = 70}){
-//     // person and size available 
-//     return(
-//         <img
-//             className="avatar"
-//             src={getImageUrl(person.imageId)}
-//             alt={person.name}
-//             width={size}
-//             height={size}
-//         />
-//         );
-// }
-
+import getImageUrl from "./Utils";
 
 function Profile({person, size = 70, profession, awards, discovered}) {
     const imageUrl = getImageUrl(person); //Get the imaage URL for the person

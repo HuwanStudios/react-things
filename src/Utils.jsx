@@ -1,15 +1,4 @@
-// function getImageUrl(person, size = 's') {
-//     return (
-//       'https://i.imgur.com/' +
-//       person.imageId +
-//       size +
-//       '.jpg'
-//     );
-//   }
-  
-//   export default getImageUrl;
-
-  function getImageUrl(person, size = 's') {
+function getImageUrl(person, size = 's') {
     return (
       'https://i.imgur.com/' +
       person.imageId +
@@ -18,4 +7,4 @@
     );
 }
 // Request
-export {getImageUrl}; // Export getImageUrl as named export
+export default getImageUrl; // Export getImageUrl as named export

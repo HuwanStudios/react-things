@@ -15,4 +15,4 @@ function ProfileTwo() {
     );
   }
 
-// export {Profile, ProfileTwo, ProfileThree};
+export {ProfileTwo, ProfileThree};
