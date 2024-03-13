@@ -14,6 +14,5 @@ export default function LightSwitch() {
         </button>
     );
 }
-
 //10-responding-to-events - Challenge 1 of 2: Fix an event handler
 
