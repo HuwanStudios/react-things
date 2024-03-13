@@ -2,7 +2,6 @@ import Panel from "./Panel.jsx";
 import getImageUrl from "./Utils.jsx";
 
 // let currentPerson;
-
 export default function StackedProfile({ person }) {
   //   currentPerson = person;
   return (
