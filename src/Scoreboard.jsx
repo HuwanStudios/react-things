@@ -57,5 +57,5 @@ export default function Scoreboard() {
         </>
     );
 }
-// 11-updating-objects-in-state - Challenge 1 of 3: Fix incorrect state updates
+// 15-updating-objects-in-state - Challenge 1 of 3: Fix incorrect state updates
 
