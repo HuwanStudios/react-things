@@ -43,4 +43,4 @@ export function getFinalState(baseState, queue) {
     );
 }
 
-//14-Queuing a series of state updates - Challenge 2 of 2: Implement the state queue yourself
+//15-Queuing a series of state updates - Challenge 2 of 2: Implement the state queue yourself
