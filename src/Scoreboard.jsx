@@ -8,7 +8,6 @@ export default function Scoreboard() {
     });
 
     function handlePlusClick() {
-        // Correcting the score update by using the setter function
         setPlayer({
             ...player,
             score: player.score + 1,
@@ -16,7 +15,6 @@ export default function Scoreboard() {
     }
 
     function handleFirstNameChange(e) {
-        // Updating the first name without losing other properties
         setPlayer({
             ...player,
             firstName: e.target.value,
@@ -24,7 +22,6 @@ export default function Scoreboard() {
     }
 
     function handleLastNameChange(e) {
-        // Updating the last name without losing other properties
         setPlayer({
             ...player,
             lastName: e.target.value,
@@ -57,5 +54,5 @@ export default function Scoreboard() {
         </>
     );
 }
-// 15-updating-objects-in-state - Challenge 1 of 3: Fix incorrect state updates
+// 16-updating-objects-in-state - Challenge 1 of 3: Fix incorrect state updates
 
