@@ -54,4 +54,5 @@ export default function Canvas() {
         </>
     );
 }
+
 // 15-updating-objects-in-state - Challenge 2 of 3: Find and fix the mutation
