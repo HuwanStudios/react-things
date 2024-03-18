@@ -53,7 +53,6 @@ export default function ShoppingCart() {
         setProducts(updatedProducts);
     }
 
-    //16-updating-arrays-in-stateChallenge 3 of 4: Add an item to the shopping cart
 
     return (
         <ul>
