@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useImmer } from 'use-immer';
 import Background from './Background.js';
 import Box from './Box.js';
 
@@ -8,27 +9,27 @@ const initialPosition = {
 };
 
 export default function Canvas() {
-    const [shape, setShape] = useState({
+    const [shape, setShape] = useImmer({
         color: 'orange',
-        position: {...initialPosition} // Clone the initial position to ensure it's a separate object
+        position: initialPosition
     });
 
     function handleMove(dx, dy) {
-        // Update position in an immutable manner
-        setShape(prevShape => ({
-            ...prevShape,
-            position: {
-                x: prevShape.position.x + dx,
-                y: prevShape.position.y + dy
-            }
-        }));
+        setShape((draft) => {
+
+
+            draft.position.x += dx;
+            draft.position.y += dy;
+
+        });
+
     }
 
     function handleColorChange(e) {
-        setShape(prevShape => ({
-            ...prevShape,
+        setShape({
+            ...shape,
             color: e.target.value
-        }));
+        });
     }
 
     return (
@@ -42,11 +43,11 @@ export default function Canvas() {
                 <option value="aliceblue">aliceblue</option>
             </select>
             <Background
-                position={initialPosition} // Ensure this is always pointing to the static initial position
+                position={initialPosition}
             />
             <Box
                 color={shape.color}
-                position={shape.position} // This position is dynamic and changes with drag actions
+                position={shape.position}
                 onMove={handleMove}
             >
                 Drag me!
@@ -55,6 +56,5 @@ export default function Canvas() {
     );
 }
 
-// 15-updating-objects-in-state - Challenge 2 of 3: Find and fix the mutation
-
+// 15-updating-objects-in-state - Challenge 3 of 3: Update an object with Immer
 
