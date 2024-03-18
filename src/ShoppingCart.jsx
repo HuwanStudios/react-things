@@ -15,23 +15,45 @@ const initialProducts = [{
 }];
 
 export default function ShoppingCart() {
-    const [products, setProducts] = useState(initialProducts);
+    const [
+        products,
+        setProducts
+    ] = useState(initialProducts)
 
-    function handleIncrementClick(index) {
-        const nextProducts = products.map((p, i) => {
-            if (i === index) {
-                // Increment the clicked counter
+    function handleIncreaseClick(productId) {
+        setProducts(products.map(product => {
+            if (product.id === productId) {
                 return {
-                    ...p,
-                    count: p.count + 1
+                    ...product,
+                    count: product.count + 1
                 };
             } else {
-                // The rest haven't changed
-                return p;
+                return product;
             }
-        });
-        setProducts(nextProducts);
+        }))
     }
+
+    function handleDecreaseClick(productId) {
+        setProducts(products.map(product => {
+            if (product.id === productId) {
+                return {
+                    ...product,
+                    count: product.count - 1
+                };
+            } else {
+                return product;
+            }
+        }))
+    }
+    //16-updating-arrays-in-stateChallenge 2 of 4: Remove an item from the shopping cart
+
+
+    function handleRemoveItemClick(productId) {
+        const updatedProducts = products.filter((product) => product.id !== productId);
+        setProducts(updatedProducts);
+    }
+
+    //16-updating-arrays-in-stateChallenge 3 of 4: Add an item to the shopping cart
 
     return (
         <ul>
@@ -41,14 +63,18 @@ export default function ShoppingCart() {
                     {' '}
                     (<b>{product.count}</b>)
                     <button onClick={() => {
-                        handleIncrementClick(product.id);
+                        handleIncreaseClick(product.id);
                     }}>
                         +
                     </button>
+                    <button onClick={() => {
+                        handleDecreaseClick(product.id);
+                    }}>
+                        –
+                    </button>
+                    <button onClick={() => handleRemoveItemClick(product.id)}>Remove</button>
                 </li>
-            ))}
+                ))}
         </ul>
     );
 }
-
-// 16-updating-arrays-in-state - Challenge 1 of 4: Update an item in the shopping cart
